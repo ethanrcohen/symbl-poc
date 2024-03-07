@@ -32,6 +32,7 @@ if (!appId || !appSecret) {
 })();
 
 async function test() {
+    // TODO: this should be changed for each unique test
     const id = btoa("test-call-id");
     // const id = randomUUID();
 
@@ -46,6 +47,7 @@ async function test() {
             sampleRateHertz,
         },
         speaker: {
+            // TODO: UPDATE HERE
             // Optional, if not specified, will simply not send an email in the end.
             userId: "emailAddress", // Update with valid email
             name: "My name",
