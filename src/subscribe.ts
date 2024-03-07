@@ -3,7 +3,7 @@ const { sdk, SpeakerEvent } = require("@symblai/symbl-js");
 const { SYMBL_APP_ID: appId, SYMBL_APP_SECRET: appSecret } = process.env;
 
 // parse connection id from command line
-const connectionId = process.argv[2];
+const connectionId = btoa("test-call-id");
 
 sdk.init({
     // APP_ID and APP_SECRET come from the Symbl Platform: https://platform.symbl.ai

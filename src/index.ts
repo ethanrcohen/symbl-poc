@@ -32,8 +32,8 @@ if (!appId || !appSecret) {
 })();
 
 async function test() {
-    // const callId = btoa("test-call-id");
-    const id = randomUUID();
+    const id = btoa("test-call-id");
+    // const id = randomUUID();
 
     const connection = await sdk.startRealtimeRequest({
         id,
