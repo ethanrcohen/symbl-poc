@@ -7,11 +7,16 @@
   "author": "Ethan Cohen <ecohen56@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "ts-node lib/index.js"
+    "start": "node --require dotenv/config lib/index.js",
+    "subscribe": "node --require dotenv/config lib/subscribe.js"
   },
   "dependencies": {
+    "@symblai/symbl-js": "^1.4.8",
+    "dotenv": "^16.4.5",
+    "mic": "^2.1.2"
   },
   "devDependencies": {
+    "@types/node": "^20.11.25",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.2"
   }
