@@ -33,7 +33,7 @@ if (!appId || !appSecret) {
 
 async function test() {
     // TODO: this should be changed for each unique test
-    const id = btoa("test-call-id");
+    const id = btoa("test-call-id-1");
     // const id = randomUUID();
 
     const connection = await sdk.startRealtimeRequest({
@@ -49,8 +49,8 @@ async function test() {
         speaker: {
             // TODO: UPDATE HERE
             // Optional, if not specified, will simply not send an email in the end.
-            userId: "emailAddress", // Update with valid email
-            name: "My name",
+            userId: "ethan@getchapter.com", // Update with valid email
+            name: "ethan",
         },
         handlers: {
             /**
