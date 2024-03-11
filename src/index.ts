@@ -1,8 +1,7 @@
 import { sdk } from "@symblai/symbl-js";
-import { randomUUID } from "crypto";
 import mic from "mic";
 
-const { SYMBL_APP_ID: appId, SYMBL_APP_SECRET: appSecret } = process.env;
+const { APP_ID: appId, APP_SECRET: appSecret } = process.env;
 
 const sampleRateHertz = 16000;
 const micInstance = mic({
